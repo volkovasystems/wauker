@@ -34,6 +34,9 @@
 			"file": "wauker.js",
 			"module": "wauker",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/wauker.git",
 			"test": "wauker-test.js",
