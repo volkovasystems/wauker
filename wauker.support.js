@@ -54,15 +54,15 @@
               		{
               			"een": "een",
               			"falzy": "falzy",
-              			"protease": "protease",
+              			"fname": "fname",
               			"protype": "protype"
               		}
               	@end-include
-              */
+              */var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var een = require("een");
 var falzy = require("falzy");
-var protease = require("protease");
+var fname = require("fname");
 var protype = require("protype");
 
 var FUNCTION_CLASS = "Function";
@@ -80,25 +80,38 @@ var wauker = function wauker(entity) {
                                       	@end-meta-configuration
                                       */
 
-	if (falzy(entity) ||
-	!protype(entity, OBJECT + FUNCTION) ||
-	entity.name === FUNCTION_CLASS ||
-	entity.name === OBJECT_CLASS)
+	var constructor = entity;
+	if (protype(entity, OBJECT)) {
+		constructor = entity.constructor;
+	}
+
+	var name = fname(constructor);
+	if (falzy(constructor) || !protype(constructor, FUNCTION) ||
+	name === FUNCTION_CLASS || name === OBJECT_CLASS)
 	{
 		return [];
 	}
 
-	var tree = [];
+	var tree = [constructor];
+	var prototype = constructor.prototype;
+	while (prototype = (0, _getPrototypeOf2.default)(prototype)) {
 
-	if (protype(entity, FUNCTION)) {
-		tree.push(entity);
-	}
-
-	protease(entity).map(function (prototype) {
-		if (!een(tree, prototype.constructor)) {
-			tree.push(prototype.constructor);
+		/*;
+                                                               	@note:
+                                                               		Discard root of the chain.
+                                                               		The root of the chain can be the Function or Object class.
+                                                               	@end-note
+                                                               */
+		constructor = prototype.constructor;
+		name = fname(constructor);
+		if (falzy(name) || name === FUNCTION_CLASS || name === OBJECT_CLASS) {
+			continue;
 		}
-	});
+
+		if (!een(tree, constructor)) {
+			tree.push(constructor);
+		}
+	}
 
 	return tree;
 };
