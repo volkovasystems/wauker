@@ -1,23 +1,28 @@
 const assert = require( "assert" );
 const wauker = require( "./wauker.js" );
 
-assert.deepEqual( wauker( Array ).map( ( constructor ) => { return constructor.name; } ), [ "Array" ] );
+assert.deepEqual( wauker( Array ).map( ( constructor ) => constructor.name ), [ "Array" ] );
 
-assert.deepEqual( wauker( Date ).map( ( constructor ) => { return constructor.name; } ), [ "Date" ] );
+assert.deepEqual( wauker( Date ).map( ( constructor ) => constructor.name ), [ "Date" ] );
 
-assert.deepEqual( wauker( RegExp ).map( ( constructor ) => { return constructor.name; } ), [ "RegExp" ] );
+assert.deepEqual( wauker( RegExp ).map( ( constructor ) => constructor.name ), [ "RegExp" ] );
 
-assert.deepEqual( wauker( RangeError ).map( ( constructor ) => { return constructor.name; } ), [ "RangeError", "Error" ] );
+assert.deepEqual( wauker( RangeError ).map( ( constructor ) => constructor.name ), [ "RangeError", "Error" ] );
 
-function Guest( name, index ){
-	this.name = name;
-	return index;
-};
+class Orange {
+	constructor( ){ }
+}
 
-Guest.prototype.addGuest = function addGuest( name ) {
-	return name;
-};
+class Apple extends Orange {
+	constructor( ){ super( ); }
+}
 
-assert.deepEqual( wauker( Guest ).map( ( constructor ) => { return constructor.name; } ), [ "Guest" ] );
+class Pear extends Apple {
+	constructor( ){ super( ); }
+}
+
+assert.deepEqual( wauker( Pear ).map( ( constructor ) => constructor.name ), [ "Pear", "Apple", "Orange" ] );
+
+assert.deepEqual( wauker( new Pear( ) ).map( ( constructor ) => constructor.name ), [ "Pear", "Apple", "Orange" ] );
 
 console.log( "ok" );
