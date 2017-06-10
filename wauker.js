@@ -54,7 +54,7 @@
 		{
 			"een": "een",
 			"falzy": "falzy",
-			"protease": "protease",
+			"fname": "fname",
 			"protype": "protype"
 		}
 	@end-include
@@ -62,7 +62,7 @@
 
 const een = require( "een" );
 const falzy = require( "falzy" );
-const protease = require( "protease" );
+const fname = require( "fname" );
 const protype = require( "protype" );
 
 const FUNCTION_CLASS = "Function";
@@ -80,25 +80,38 @@ const wauker = function wauker( entity ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( entity ) ||
-		!protype( entity, OBJECT + FUNCTION ) ||
-		entity.name === FUNCTION_CLASS ||
-		entity.name === OBJECT_CLASS )
+	let constructor = entity;
+	if( protype( entity, OBJECT ) ){
+		constructor = entity.constructor;
+	}
+
+	let name = fname( constructor );
+	if( falzy( constructor ) || !protype( constructor, FUNCTION ) ||
+		name === FUNCTION_CLASS || name === OBJECT_CLASS )
 	{
 		return [ ];
 	}
 
-	let tree = [ ];
+	let tree = [ constructor ];
+	let prototype = constructor.prototype;
+	while( prototype = Object.getPrototypeOf( prototype ) ){
 
-	if( protype( entity, FUNCTION ) ){
-		tree.push( entity );
-	}
-
-	protease( entity ).map( ( prototype ) => {
-		if( !een( tree, prototype.constructor ) ){
-			tree.push( prototype.constructor );
+		/*;
+			@note:
+				Discard root of the chain.
+				The root of the chain can be the Function or Object class.
+			@end-note
+		*/
+		constructor = prototype.constructor;
+		name = fname( constructor );
+		if( falzy( name ) || name === FUNCTION_CLASS || name === OBJECT_CLASS ){
+			continue;
 		}
-	} );
+
+		if( !een( tree, constructor ) ){
+			tree.push( constructor );
+		}
+	}
 
 	return tree;
 };

@@ -2,7 +2,7 @@ yarn add \
 babel-runtime \
 een \
 falzy \
-protease \
+fname \
 protype \
 --save && \
 yarn add \
@@ -16,7 +16,7 @@ webpack \
 bower install \
 een \
 falzy \
-protease \
+fname \
 protype \
 --save \
 --force-latest
