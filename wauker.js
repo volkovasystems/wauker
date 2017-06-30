@@ -80,6 +80,10 @@ const wauker = function wauker( entity ){
 		@end-meta-configuration
 	*/
 
+	if( falzy( entity ) || !protype( entity, FUNCTION + OBJECT ) ){
+		return [ ];
+	}
+
 	let constructor = entity;
 	if( protype( entity, OBJECT ) ){
 		constructor = entity.constructor;
