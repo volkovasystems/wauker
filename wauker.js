@@ -34,10 +34,11 @@
 			"file": "wauker.js",
 			"module": "wauker",
 			"author": "Richeve S. Bebedor",
-			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-			],
 			"eMail": "richeve.bebedor@gmail.com",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
+			],
 			"repository": "https://github.com/volkovasystems/wauker.git",
 			"test": "wauker-test.js",
 			"global": true
@@ -85,12 +86,12 @@ const wauker = function wauker( entity ){
 	}
 
 	let constructor = entity;
-	if( protype( entity, OBJECT ) ){
+	if( typeof entity == OBJECT ){
 		constructor = entity.constructor;
 	}
 
 	let name = fname( constructor );
-	if( falzy( constructor ) || !protype( constructor, FUNCTION ) ||
+	if( falzy( constructor ) || typeof constructor != FUNCTION ||
 		name === FUNCTION_CLASS || name === OBJECT_CLASS )
 	{
 		return [ ];
