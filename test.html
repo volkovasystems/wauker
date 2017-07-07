@@ -1,8 +1,48 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./wauker.deploy.js">
-		</script>
+		<title>wauker unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./wauker.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "wauker unit test", function( assert ) {
+
+				assert.deepEqual( wauker( Array ).map( ( constructor ) => constructor.name ),
+					[ "Array" ], "should be deeply equal" );
+
+				assert.deepEqual( wauker( RangeError ).map( ( constructor ) => constructor.name ),
+					[ "RangeError", "Error" ], "should be deeply equal" );
+
+				class Orange {
+					constructor( ){ }
+				}
+
+				class Apple extends Orange {
+					constructor( ){ super( ); }
+				}
+
+				class Pear extends Apple {
+					constructor( ){ super( ); }
+				}
+
+				assert.deepEqual( wauker( Pear ).map( ( constructor ) => constructor.name ),
+					[ "Pear", "Apple", "Orange" ], "should be deeply equal" );
+
+				assert.deepEqual( wauker( new Pear( ) ).map( ( constructor ) => constructor.name ),
+					[ "Pear", "Apple", "Orange" ], "should be deeply equal" );
+
+			} );
+		</script>
+	</body>
 </html>
