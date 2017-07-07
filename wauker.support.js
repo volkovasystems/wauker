@@ -34,10 +34,11 @@
               			"file": "wauker.js",
               			"module": "wauker",
               			"author": "Richeve S. Bebedor",
-              			"contributors": [
-              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-              			],
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
+              			],
               			"repository": "https://github.com/volkovasystems/wauker.git",
               			"test": "wauker-test.js",
               			"global": true
@@ -58,7 +59,7 @@
               			"protype": "protype"
               		}
               	@end-include
-              */var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+              */var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var een = require("een");
 var falzy = require("falzy");
@@ -80,13 +81,17 @@ var wauker = function wauker(entity) {
                                       	@end-meta-configuration
                                       */
 
+	if (falzy(entity) || !protype(entity, FUNCTION + OBJECT)) {
+		return [];
+	}
+
 	var constructor = entity;
-	if (protype(entity, OBJECT)) {
+	if ((typeof entity === "undefined" ? "undefined" : (0, _typeof3.default)(entity)) == OBJECT) {
 		constructor = entity.constructor;
 	}
 
 	var name = fname(constructor);
-	if (falzy(constructor) || !protype(constructor, FUNCTION) ||
+	if (falzy(constructor) || (typeof constructor === "undefined" ? "undefined" : (0, _typeof3.default)(constructor)) != FUNCTION ||
 	name === FUNCTION_CLASS || name === OBJECT_CLASS)
 	{
 		return [];
