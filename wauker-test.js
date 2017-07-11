@@ -26,4 +26,8 @@ assert.deepEqual( wauker( Pear ).map( ( constructor ) => constructor.name ),
 assert.deepEqual( wauker( new Pear( ) ).map( ( constructor ) => constructor.name ),
 	[ "Pear", "Apple", "Orange" ], "should be deeply equal" );
 
+/** @note test that replicates error on wauker
+	console.log( wauker( ( ) => { } ) );
+**/
+
 console.log( "ok" );
