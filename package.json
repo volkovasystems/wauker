@@ -1,48 +1,53 @@
 {
-  "name": "wauker",
-  "version": "0.18.0",
-  "description": "Walks the inheritance tree.",
-  "main": "wauker.js",
-  "deploy": "wauker.deploy.js",
-  "support": "wauker.support.js",
-  "browser": "wauker.deploy.js",
-  "scripts": {
-    "build": "babel wauker.js --out-file wauker.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha wauker-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/wauker.git"
-  },
-  "keywords": [
-    "walk",
-    "inheritance",
-    "tree",
-    "wauker"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/wauker/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/wauker#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "een": "^0.21.0",
-    "falzy": "^0.20.0",
-    "fname": "^0.11.0",
-    "protype": "^0.22.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.1.0"
-  }
+	"name": "wauker",
+	"version": "0.19.0",
+	"description": "Walks the inheritance tree.",
+	"main": "wauker.js",
+	"deploy": "wauker.deploy.js",
+	"support": "wauker.support.js",
+	"browser": "wauker.deploy.js",
+	"scripts": {
+		"build": "babel wauker.js --out-file wauker.support.js --source-maps && webpack --progress --display-modules",
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"formal": "jesy apply '*.json'",
+		"pretest": "npm run clear && npm run build",
+		"test": "node wauker-test.js",
+		"posttest": "npm run formal"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/wauker.git"
+	},
+	"keywords": [
+		"walk",
+		"inheritance",
+		"tree",
+		"wauker"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/wauker/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/wauker#readme",
+	"dependencies": {
+		"babel-runtime": "^6.23.0",
+		"een": "^0.22.0",
+		"falzy": "^0.23.0",
+		"fname": "^0.12.0",
+		"protype": "^0.23.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.3.0"
+	}
 }

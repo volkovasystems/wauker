@@ -3,10 +3,10 @@ const assert = require( "assert" );
 const wauker = require( "./wauker.js" );
 
 assert.deepEqual( wauker( Array ).map( ( constructor ) => constructor.name ),
-	[ "Array" ], "should be deeply equal" );
+	[ "Array" ], "should return [ 'Array' ]" );
 
 assert.deepEqual( wauker( RangeError ).map( ( constructor ) => constructor.name ),
-	[ "RangeError", "Error" ], "should be deeply equal" );
+	[ "RangeError", "Error" ], "should return [ 'RangeError', 'Error' ]" );
 
 class Orange {
 	constructor( ){ }
@@ -21,10 +21,10 @@ class Pear extends Apple {
 }
 
 assert.deepEqual( wauker( Pear ).map( ( constructor ) => constructor.name ),
-	[ "Pear", "Apple", "Orange" ], "should be deeply equal" );
+	[ "Pear", "Apple", "Orange" ], "should return [ 'Pear', 'Apple', 'Orange' ]" );
 
 assert.deepEqual( wauker( new Pear( ) ).map( ( constructor ) => constructor.name ),
-	[ "Pear", "Apple", "Orange" ], "should be deeply equal" );
+	[ "Pear", "Apple", "Orange" ], "should return [ 'Pear', 'Apple', 'Orange' ]" );
 
 /** @note test that replicates error on wauker
 	console.log( wauker( ( ) => { } ) );
