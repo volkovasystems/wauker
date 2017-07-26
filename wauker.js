@@ -55,8 +55,7 @@
 		{
 			"een": "een",
 			"falzy": "falzy",
-			"fname": "fname",
-			"protype": "protype"
+			"fname": "fname"
 		}
 	@end-include
 */
@@ -64,7 +63,6 @@
 const een = require( "een" );
 const falzy = require( "falzy" );
 const fname = require( "fname" );
-const protype = require( "protype" );
 
 const FUNCTION_CLASS = "Function";
 const OBJECT_CLASS = "Object";
@@ -81,26 +79,25 @@ const wauker = function wauker( entity ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( entity ) || !protype( entity, FUNCTION + OBJECT ) ){
-		return [ ];
-	}
-
 	let constructor = entity;
-	if( typeof entity == OBJECT ){
+	if( typeof entity == "object" ){
 		constructor = entity.constructor;
 	}
 
 	let name = fname( constructor );
-	if( falzy( constructor ) || typeof constructor != FUNCTION ||
-		name === FUNCTION_CLASS || name === OBJECT_CLASS )
-	{
+	if(
+		falzy( constructor )
+		|| falzy( name )
+		|| typeof constructor != "function"
+		|| name === FUNCTION_CLASS
+		|| name === OBJECT_CLASS
+	){
 		return [ ];
 	}
 
 	let tree = [ constructor ];
 	let prototype = constructor.prototype;
 	while( prototype = Object.getPrototypeOf( prototype ) ){
-
 		/*;
 			@note:
 				Discard root of the chain.
@@ -108,8 +105,12 @@ const wauker = function wauker( entity ){
 			@end-note
 		*/
 		constructor = prototype.constructor;
-		name = fname( constructor );
-		if( falzy( name ) || name === FUNCTION_CLASS || name === OBJECT_CLASS ){
+		let name = fname( constructor );
+		if(
+			falzy( name )
+			|| name === FUNCTION_CLASS
+			|| name === OBJECT_CLASS
+		){
 			continue;
 		}
 

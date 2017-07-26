@@ -30,4 +30,16 @@ assert.deepEqual( wauker( new Pear( ) ).map( ( constructor ) => constructor.name
 	console.log( wauker( ( ) => { } ) );
 **/
 
+assert.deepEqual( wauker( ), [ ], "should be empty" );
+
+assert.deepEqual( wauker( "hello" ), [ ], "should be empty" );
+
+assert.deepEqual( wauker( 123 ), [ ], "should be empty" );
+
+assert.deepEqual( wauker( { } ), [ ], "should be empty" );
+
+assert.deepEqual( wauker( function( ){ } ), [ ], "should be empty" );
+
+assert.deepEqual( wauker( ( ) => { } ), [ ], "should be empty" );
+
 console.log( "ok" );

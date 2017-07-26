@@ -3,7 +3,6 @@ babel-runtime \
 een \
 falzy \
 fname \
-protype \
 --save && \
 yarn add \
 babel-cli \
@@ -17,6 +16,5 @@ bower install \
 een \
 falzy \
 fname \
-protype \
 --save \
 --force-latest

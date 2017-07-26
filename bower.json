@@ -1,6 +1,6 @@
 {
 	"name": "wauker",
-	"version": "0.19.0",
+	"version": "0.20.0",
 	"description": "Walks the inheritance tree.",
 	"main": "wauker.deploy.js",
 	"support": "wauker.support.js",
@@ -25,9 +25,8 @@
 		"tests"
 	],
 	"dependencies": {
-		"een": "^0.22.0",
+		"een": "^0.23.0",
 		"falzy": "^0.23.0",
-		"fname": "^0.12.0",
-		"protype": "^0.23.0"
+		"fname": "^0.13.0"
 	}
 }

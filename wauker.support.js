@@ -55,8 +55,7 @@
               		{
               			"een": "een",
               			"falzy": "falzy",
-              			"fname": "fname",
-              			"protype": "protype"
+              			"fname": "fname"
               		}
               	@end-include
               */var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
@@ -64,7 +63,6 @@
 var een = require("een");
 var falzy = require("falzy");
 var fname = require("fname");
-var protype = require("protype");
 
 var FUNCTION_CLASS = "Function";
 var OBJECT_CLASS = "Object";
@@ -81,18 +79,18 @@ var wauker = function wauker(entity) {
                                       	@end-meta-configuration
                                       */
 
-	if (falzy(entity) || !protype(entity, FUNCTION + OBJECT)) {
-		return [];
-	}
-
 	var constructor = entity;
-	if ((typeof entity === "undefined" ? "undefined" : (0, _typeof3.default)(entity)) == OBJECT) {
+	if ((typeof entity === "undefined" ? "undefined" : (0, _typeof3.default)(entity)) == "object") {
 		constructor = entity.constructor;
 	}
 
 	var name = fname(constructor);
-	if (falzy(constructor) || (typeof constructor === "undefined" ? "undefined" : (0, _typeof3.default)(constructor)) != FUNCTION ||
-	name === FUNCTION_CLASS || name === OBJECT_CLASS)
+	if (
+	falzy(constructor) ||
+	falzy(name) ||
+	typeof constructor != "function" ||
+	name === FUNCTION_CLASS ||
+	name === OBJECT_CLASS)
 	{
 		return [];
 	}
@@ -100,7 +98,6 @@ var wauker = function wauker(entity) {
 	var tree = [constructor];
 	var prototype = constructor.prototype;
 	while (prototype = (0, _getPrototypeOf2.default)(prototype)) {
-
 		/*;
                                                                	@note:
                                                                		Discard root of the chain.
@@ -108,8 +105,12 @@ var wauker = function wauker(entity) {
                                                                	@end-note
                                                                */
 		constructor = prototype.constructor;
-		name = fname(constructor);
-		if (falzy(name) || name === FUNCTION_CLASS || name === OBJECT_CLASS) {
+		var _name = fname(constructor);
+		if (
+		falzy(_name) ||
+		_name === FUNCTION_CLASS ||
+		_name === OBJECT_CLASS)
+		{
 			continue;
 		}
 
