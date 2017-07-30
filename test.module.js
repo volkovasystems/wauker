@@ -436,6 +436,7 @@ describe( "wauker", ( ) => {
 						return constructor.name;
 					} );
 
+					return test;
 					//: @end-ignore
 
 				}
