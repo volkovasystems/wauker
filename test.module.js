@@ -419,7 +419,7 @@ describe( "wauker", ( ) => {
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-
+					//: @ignore:
 					class Orange {
 						constructor( ){ }
 					}
@@ -435,6 +435,8 @@ describe( "wauker", ( ) => {
 					let test = wauker( new Pear( ) ).map( function( constructor ){
 						return constructor.name;
 					} );
+
+					//: @end-ignore
 
 				}
 
