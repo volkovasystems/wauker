@@ -413,6 +413,46 @@ describe( "wauker", ( ) => {
 		} );
 	} );
 
+	describe( "`wauker( new Pear( ) ).map( ( constructor ) => constructor.name )`", ( ) => {
+		it( "should be equal to [ 'Pear', 'Apple', 'Orange' ]", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					class Orange {
+						constructor( ){ }
+					}
+
+					class Apple extends Orange {
+						constructor( ){ super( ); }
+					}
+
+					class Pear extends Apple {
+						constructor( ){ super( ); }
+					}
+
+					let test = wauker( new Pear( ) ).map( function( constructor ){
+						return constructor.name;
+					} );
+
+				}
+
+			).value;
+
+
+
+			/* @note
+
+				Test result has change from [ 'Pear', 'Apple', 'Orange' ]
+				to [ "Pear", "Orange" ]
+			@note */
+
+			assert.deepEqual( result, [ 'Pear', 'Apple', 'Orange' ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge
