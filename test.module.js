@@ -271,7 +271,7 @@ describe( "wauker", ( ) => {
 
 //: @end-client
 
-//: @bridge
+//: @bridge:
 describe( "wauker", ( ) => {
 
 	const testBridge = path.resolve(__dirname, "bridge.html");
