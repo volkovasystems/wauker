@@ -1,1 +1,340 @@
-{"state":{"passed":9,"failed":0,"skipped":0},"start":"2017-07-30T10:02:33.283Z","end":"2017-07-30T10:02:38.395Z","capabilities":{"browserName":"chrome","chromeOptions":{"args":["disable-gpu","headless"]},"proxy":null},"host":"127.0.0.1","port":4444,"baseUrl":"http://localhost","framework":"mocha","mochaOpts":{"timeout":10000,"ui":"bdd"},"suites":[{"name":"wauker","duration":0,"start":"2017-07-30T10:02:37.805Z","tests":[],"hooks":[]},{"name":"wauker","duration":411,"start":"2017-07-30T10:02:37.806Z","end":"2017-07-30T10:02:38.217Z","tests":[],"hooks":[{"start":"2017-07-30T10:02:37.809Z","end":"2017-07-30T10:02:37.810Z","duration":1,"title":"\"before each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ 'Array' ]"},{"start":"2017-07-30T10:02:37.914Z","end":"2017-07-30T10:02:37.914Z","duration":0,"title":"\"after each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ 'Array' ]"},{"start":"2017-07-30T10:02:37.922Z","end":"2017-07-30T10:02:37.923Z","duration":1,"title":"\"before each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ 'RangeError', 'Error' ]"},{"start":"2017-07-30T10:02:37.963Z","end":"2017-07-30T10:02:37.963Z","duration":0,"title":"\"after each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ 'RangeError', 'Error' ]"},{"start":"2017-07-30T10:02:37.963Z","end":"2017-07-30T10:02:37.963Z","duration":0,"title":"\"before each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:37.999Z","end":"2017-07-30T10:02:37.999Z","duration":0,"title":"\"after each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.000Z","end":"2017-07-30T10:02:38.000Z","duration":0,"title":"\"before each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.035Z","end":"2017-07-30T10:02:38.035Z","duration":0,"title":"\"after each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.035Z","end":"2017-07-30T10:02:38.035Z","duration":0,"title":"\"before each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.069Z","end":"2017-07-30T10:02:38.069Z","duration":0,"title":"\"after each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.069Z","end":"2017-07-30T10:02:38.069Z","duration":0,"title":"\"before each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.106Z","end":"2017-07-30T10:02:38.106Z","duration":0,"title":"\"after each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.106Z","end":"2017-07-30T10:02:38.106Z","duration":0,"title":"\"before each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.148Z","end":"2017-07-30T10:02:38.148Z","duration":0,"title":"\"after each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.149Z","end":"2017-07-30T10:02:38.150Z","duration":1,"title":"\"before each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.181Z","end":"2017-07-30T10:02:38.182Z","duration":1,"title":"\"after each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ ]"},{"start":"2017-07-30T10:02:38.189Z","end":"2017-07-30T10:02:38.189Z","duration":0,"title":"\"before each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ 'Pear', 'Apple', 'Orange' ]"},{"start":"2017-07-30T10:02:38.217Z","end":"2017-07-30T10:02:38.217Z","duration":0,"title":"\"after each\" hook","associatedSuite":"wauker","associatedTest":"should be equal to [ 'Pear', 'Apple', 'Orange' ]"},{"start":"2017-07-30T10:02:38.217Z","end":"2017-07-30T10:02:38.217Z","duration":0,"title":"\"after all\" hook","associatedSuite":"wauker"}]},{"name":"`wauker( Array ).map( ( constructor ) => constructor.name )`","duration":114,"start":"2017-07-30T10:02:37.807Z","end":"2017-07-30T10:02:37.921Z","tests":[{"name":"should be equal to [ 'Array' ]","start":"2017-07-30T10:02:37.808Z","end":"2017-07-30T10:02:37.912Z","duration":104,"state":"pass"}],"hooks":[]},{"name":"`wauker( RangeError ).map( ( constructor ) => constructor.name )`","duration":42,"start":"2017-07-30T10:02:37.921Z","end":"2017-07-30T10:02:37.963Z","tests":[{"name":"should be equal to [ 'RangeError', 'Error' ]","start":"2017-07-30T10:02:37.922Z","end":"2017-07-30T10:02:37.963Z","duration":41,"state":"pass"}],"hooks":[]},{"name":"`wauker( )`","duration":36,"start":"2017-07-30T10:02:37.963Z","end":"2017-07-30T10:02:37.999Z","tests":[{"name":"should be equal to [ ]","start":"2017-07-30T10:02:37.963Z","end":"2017-07-30T10:02:37.999Z","duration":36,"state":"pass"}],"hooks":[]},{"name":"`wauker( 'hello' )`","duration":36,"start":"2017-07-30T10:02:37.999Z","end":"2017-07-30T10:02:38.035Z","tests":[{"name":"should be equal to [ ]","start":"2017-07-30T10:02:37.999Z","end":"2017-07-30T10:02:38.035Z","duration":36,"state":"pass"}],"hooks":[]},{"name":"`wauker( 123 )`","duration":34,"start":"2017-07-30T10:02:38.035Z","end":"2017-07-30T10:02:38.069Z","tests":[{"name":"should be equal to [ ]","start":"2017-07-30T10:02:38.035Z","end":"2017-07-30T10:02:38.068Z","duration":33,"state":"pass"}],"hooks":[]},{"name":"`wauker( { } )`","duration":37,"start":"2017-07-30T10:02:38.069Z","end":"2017-07-30T10:02:38.106Z","tests":[{"name":"should be equal to [ ]","start":"2017-07-30T10:02:38.069Z","end":"2017-07-30T10:02:38.106Z","duration":37,"state":"pass"}],"hooks":[]},{"name":"`wauker( function( ){ } )`","duration":43,"start":"2017-07-30T10:02:38.106Z","end":"2017-07-30T10:02:38.149Z","tests":[{"name":"should be equal to [ ]","start":"2017-07-30T10:02:38.106Z","end":"2017-07-30T10:02:38.148Z","duration":42,"state":"pass"}],"hooks":[]},{"name":"`wauker( ( ) => { } )`","duration":33,"start":"2017-07-30T10:02:38.149Z","end":"2017-07-30T10:02:38.182Z","tests":[{"name":"should be equal to [ ]","start":"2017-07-30T10:02:38.149Z","end":"2017-07-30T10:02:38.181Z","duration":32,"state":"pass"}],"hooks":[]},{"name":"`wauker( new Pear( ) ).map( ( constructor ) => constructor.name )`","duration":35,"start":"2017-07-30T10:02:38.182Z","end":"2017-07-30T10:02:38.217Z","tests":[{"name":"should be equal to [ 'Pear', 'Apple', 'Orange' ]","start":"2017-07-30T10:02:38.182Z","end":"2017-07-30T10:02:38.217Z","duration":35,"state":"pass"}],"hooks":[]}]}
+{
+	"state": {
+		"passed": 9,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-07-30T10:03:46.220Z",
+	"end": "2017-07-30T10:04:19.522Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "wauker",
+			"duration": 0,
+			"start": "2017-07-30T10:04:18.929Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "wauker",
+			"duration": 414,
+			"start": "2017-07-30T10:04:18.930Z",
+			"end": "2017-07-30T10:04:19.344Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-07-30T10:04:18.934Z",
+					"end": "2017-07-30T10:04:18.934Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ 'Array' ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.024Z",
+					"end": "2017-07-30T10:04:19.024Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ 'Array' ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.035Z",
+					"end": "2017-07-30T10:04:19.035Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ 'RangeError', 'Error' ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.078Z",
+					"end": "2017-07-30T10:04:19.078Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ 'RangeError', 'Error' ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.079Z",
+					"end": "2017-07-30T10:04:19.079Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.117Z",
+					"end": "2017-07-30T10:04:19.117Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.117Z",
+					"end": "2017-07-30T10:04:19.117Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.153Z",
+					"end": "2017-07-30T10:04:19.153Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.153Z",
+					"end": "2017-07-30T10:04:19.154Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.190Z",
+					"end": "2017-07-30T10:04:19.191Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.191Z",
+					"end": "2017-07-30T10:04:19.192Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.230Z",
+					"end": "2017-07-30T10:04:19.230Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.231Z",
+					"end": "2017-07-30T10:04:19.231Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.271Z",
+					"end": "2017-07-30T10:04:19.271Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.273Z",
+					"end": "2017-07-30T10:04:19.274Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.313Z",
+					"end": "2017-07-30T10:04:19.313Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.319Z",
+					"end": "2017-07-30T10:04:19.319Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ 'Pear', 'Apple', 'Orange' ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.344Z",
+					"end": "2017-07-30T10:04:19.344Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ 'Pear', 'Apple', 'Orange' ]"
+				},
+				{
+					"start": "2017-07-30T10:04:19.344Z",
+					"end": "2017-07-30T10:04:19.344Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "wauker"
+				}
+			]
+		},
+		{
+			"name": "`wauker( Array ).map( ( constructor ) => constructor.name )`",
+			"duration": 95,
+			"start": "2017-07-30T10:04:18.931Z",
+			"end": "2017-07-30T10:04:19.026Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 'Array' ]",
+					"start": "2017-07-30T10:04:18.933Z",
+					"end": "2017-07-30T10:04:19.022Z",
+					"duration": 89,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wauker( RangeError ).map( ( constructor ) => constructor.name )`",
+			"duration": 52,
+			"start": "2017-07-30T10:04:19.026Z",
+			"end": "2017-07-30T10:04:19.078Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 'RangeError', 'Error' ]",
+					"start": "2017-07-30T10:04:19.027Z",
+					"end": "2017-07-30T10:04:19.078Z",
+					"duration": 51,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wauker( )`",
+			"duration": 39,
+			"start": "2017-07-30T10:04:19.078Z",
+			"end": "2017-07-30T10:04:19.117Z",
+			"tests": [
+				{
+					"name": "should be equal to [ ]",
+					"start": "2017-07-30T10:04:19.079Z",
+					"end": "2017-07-30T10:04:19.116Z",
+					"duration": 37,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wauker( 'hello' )`",
+			"duration": 36,
+			"start": "2017-07-30T10:04:19.117Z",
+			"end": "2017-07-30T10:04:19.153Z",
+			"tests": [
+				{
+					"name": "should be equal to [ ]",
+					"start": "2017-07-30T10:04:19.117Z",
+					"end": "2017-07-30T10:04:19.153Z",
+					"duration": 36,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wauker( 123 )`",
+			"duration": 38,
+			"start": "2017-07-30T10:04:19.153Z",
+			"end": "2017-07-30T10:04:19.191Z",
+			"tests": [
+				{
+					"name": "should be equal to [ ]",
+					"start": "2017-07-30T10:04:19.153Z",
+					"end": "2017-07-30T10:04:19.190Z",
+					"duration": 37,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wauker( { } )`",
+			"duration": 39,
+			"start": "2017-07-30T10:04:19.191Z",
+			"end": "2017-07-30T10:04:19.230Z",
+			"tests": [
+				{
+					"name": "should be equal to [ ]",
+					"start": "2017-07-30T10:04:19.191Z",
+					"end": "2017-07-30T10:04:19.230Z",
+					"duration": 39,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wauker( function( ){ } )`",
+			"duration": 41,
+			"start": "2017-07-30T10:04:19.231Z",
+			"end": "2017-07-30T10:04:19.272Z",
+			"tests": [
+				{
+					"name": "should be equal to [ ]",
+					"start": "2017-07-30T10:04:19.231Z",
+					"end": "2017-07-30T10:04:19.271Z",
+					"duration": 40,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wauker( ( ) => { } )`",
+			"duration": 41,
+			"start": "2017-07-30T10:04:19.272Z",
+			"end": "2017-07-30T10:04:19.313Z",
+			"tests": [
+				{
+					"name": "should be equal to [ ]",
+					"start": "2017-07-30T10:04:19.272Z",
+					"end": "2017-07-30T10:04:19.313Z",
+					"duration": 41,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wauker( new Pear( ) ).map( ( constructor ) => constructor.name )`",
+			"duration": 31,
+			"start": "2017-07-30T10:04:19.313Z",
+			"end": "2017-07-30T10:04:19.344Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 'Pear', 'Apple', 'Orange' ]",
+					"start": "2017-07-30T10:04:19.313Z",
+					"end": "2017-07-30T10:04:19.344Z",
+					"duration": 31,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
