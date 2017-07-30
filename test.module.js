@@ -99,37 +99,6 @@ describe( "wauker", ( ) => {
 		} );
 	} );
 
-
-	describe( "`wauker( Pear ).map( ( constructor ) => constructor.name )`", ( ) => {
-		it( "should be equal to [ 'Pear', 'Apple', 'Orange' ]", ( ) => {
-
-			class Orange {
-				constructor( ){ }
-			}
-
-			class Apple extends Orange {
-				constructor( ){ super( ); }
-			}
-
-			class Pear extends Apple {
-				constructor( ){ super( ); }
-			}
-
-			let test = wauker( new Pear( ) ).map( function( constructor ){
-				return constructor.name;
-			} );
-
-			/* @note
-
-				Test result has change from [ 'Pear', 'Apple', 'Orange' ]
-				to [ "Pear", "Orange" ]
-			@note */
-
-			assert.deepEqual( test, [ "Pear", "Orange" ] );
-
-		} );
-	} );
-
 	describe( "`wauker( )`", ( ) => {
 		it( "should be equal to [ ]", ( ) => {
 			assert.deepEqual( wauker( ), [ ] );
@@ -163,6 +132,36 @@ describe( "wauker", ( ) => {
 	describe( "`wauker( ( ) => { } )`", ( ) => {
 		it( "should be equal to [ ]", ( ) => {
 			assert.deepEqual( wauker( ( ) => { } ), [ ] );
+		} );
+	} );
+
+	describe( "`wauker( new Pear( ) ).map( ( constructor ) => constructor.name )`", ( ) => {
+		it( "should be equal to [ 'Pear', 'Apple', 'Orange' ]", ( ) => {
+
+			class Orange {
+				constructor( ){ }
+			}
+
+			class Apple extends Orange {
+				constructor( ){ super( ); }
+			}
+
+			class Pear extends Apple {
+				constructor( ){ super( ); }
+			}
+
+			let test = wauker( new Pear( ) ).map( function( constructor ){
+				return constructor.name;
+			} );
+
+			/* @note
+
+				Test result has change from [ 'Pear', 'Apple', 'Orange' ]
+				to [ "Pear", "Orange" ]
+			@note */
+
+			assert.deepEqual( test, [ 'Pear', 'Apple', 'Orange' ] );
+
 		} );
 	} );
 
@@ -226,7 +225,7 @@ describe( "wauker", ( ) => {
 				to [ "Pear", "Orange" ]
 			@note */
 
-			assert.deepEqual( test, [ "Pear", "Orange" ] );
+			assert.deepEqual( test, [ 'Pear', 'Apple', 'Orange' ] );
 
 		} );
 	} );
