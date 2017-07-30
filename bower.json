@@ -1,6 +1,6 @@
 {
 	"name": "wauker",
-	"version": "0.21.0",
+	"version": "0.22.0",
 	"description": "Walks the inheritance tree.",
 	"main": "wauker.deploy.js",
 	"support": "wauker.support.js",

@@ -1,60 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>wauker unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:wauker</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./wauker.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "wauker unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.deepEqual( wauker( Array ).map( ( constructor ) => constructor.name ),
-					[ "Array" ], "should be equal to [ 'Array' ]" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.deepEqual( wauker( RangeError ).map( ( constructor ) => constructor.name ),
-					[ "RangeError", "Error" ], "should be equal to [ 'RangeError', 'Error' ]" );
-
-				class Orange {
-					constructor( ){ }
-				}
-
-				class Apple extends Orange {
-					constructor( ){ super( ); }
-				}
-
-				class Pear extends Apple {
-					constructor( ){ super( ); }
-				}
-
-				assert.deepEqual( wauker( Pear ).map( ( constructor ) => constructor.name ),
-					[ "Pear", "Apple", "Orange" ], "should be equal to [ 'Pear', 'Apple', 'Orange' ]" );
-
-				assert.deepEqual( wauker( new Pear( ) ).map( ( constructor ) => constructor.name ),
-					[ "Pear", "Apple", "Orange" ], "should be equal to [ 'Pear', 'Apple', 'Orange' ]" );
-
-				assert.deepEqual( wauker( ), [ ], "should be equal to [ ]" );
-
-				assert.deepEqual( wauker( "hello" ), [ ], "should be equal to [ ]" );
-
-				assert.deepEqual( wauker( 123 ), [ ], "should be equal to [ ]" );
-
-				assert.deepEqual( wauker( { } ), [ ], "should be equal to [ ]" );
-
-				assert.deepEqual( wauker( function( ){ } ), [ ], "should be equal to [ ]" );
-
-				assert.deepEqual( wauker( ( ) => { } ), [ ], "should be equal to [ ]" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
