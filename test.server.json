@@ -1,144 +1,144 @@
 {
-	"stats": {
-		"suites": 10,
-		"tests": 9,
-		"passes": 9,
-		"pending": 0,
-		"failures": 0,
-		"start": "2017-07-30T10:03:45.194Z",
-		"end": "2017-07-30T10:03:45.201Z",
-		"duration": 7
-	},
-	"tests": [
-		{
-			"title": "should be equal to [ 'Array' ]",
-			"fullTitle": "wauker `wauker( Array ).map( ( constructor ) => constructor.name )` should be equal to [ 'Array' ]",
-			"duration": 2,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ 'RangeError', 'Error' ]",
-			"fullTitle": "wauker `wauker( RangeError ).map( ( constructor ) => constructor.name )` should be equal to [ 'RangeError', 'Error' ]",
-			"duration": 1,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( 'hello' )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( 123 )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( { } )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( function( ){ } )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( ( ) => { } )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ 'Pear', 'Apple', 'Orange' ]",
-			"fullTitle": "wauker `wauker( new Pear( ) ).map( ( constructor ) => constructor.name )` should be equal to [ 'Pear', 'Apple', 'Orange' ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		}
-	],
-	"pending": [],
-	"failures": [],
-	"passes": [
-		{
-			"title": "should be equal to [ 'Array' ]",
-			"fullTitle": "wauker `wauker( Array ).map( ( constructor ) => constructor.name )` should be equal to [ 'Array' ]",
-			"duration": 2,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ 'RangeError', 'Error' ]",
-			"fullTitle": "wauker `wauker( RangeError ).map( ( constructor ) => constructor.name )` should be equal to [ 'RangeError', 'Error' ]",
-			"duration": 1,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( 'hello' )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( 123 )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( { } )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( function( ){ } )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ ]",
-			"fullTitle": "wauker `wauker( ( ) => { } )` should be equal to [ ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should be equal to [ 'Pear', 'Apple', 'Orange' ]",
-			"fullTitle": "wauker `wauker( new Pear( ) ).map( ( constructor ) => constructor.name )` should be equal to [ 'Pear', 'Apple', 'Orange' ]",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		}
-	]
+  "stats": {
+    "suites": 10,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-08-20T04:20:47.559Z",
+    "end": "2017-08-20T04:20:47.570Z",
+    "duration": 11
+  },
+  "tests": [
+    {
+      "title": "should be equal to [ 'Array' ]",
+      "fullTitle": "wauker `wauker( Array ).map( ( constructor ) => constructor.name )` should be equal to [ 'Array' ]",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ 'RangeError', 'Error' ]",
+      "fullTitle": "wauker `wauker( RangeError ).map( ( constructor ) => constructor.name )` should be equal to [ 'RangeError', 'Error' ]",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( )` should be equal to [ ]",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( 'hello' )` should be equal to [ ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( 123 )` should be equal to [ ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( { } )` should be equal to [ ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( function( ){ } )` should be equal to [ ]",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( ( ) => { } )` should be equal to [ ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ 'Pear', 'Apple', 'Orange' ]",
+      "fullTitle": "wauker `wauker( new Pear( ) ).map( ( constructor ) => constructor.name )` should be equal to [ 'Pear', 'Apple', 'Orange' ]",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should be equal to [ 'Array' ]",
+      "fullTitle": "wauker `wauker( Array ).map( ( constructor ) => constructor.name )` should be equal to [ 'Array' ]",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ 'RangeError', 'Error' ]",
+      "fullTitle": "wauker `wauker( RangeError ).map( ( constructor ) => constructor.name )` should be equal to [ 'RangeError', 'Error' ]",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( )` should be equal to [ ]",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( 'hello' )` should be equal to [ ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( 123 )` should be equal to [ ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( { } )` should be equal to [ ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( function( ){ } )` should be equal to [ ]",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ ]",
+      "fullTitle": "wauker `wauker( ( ) => { } )` should be equal to [ ]",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to [ 'Pear', 'Apple', 'Orange' ]",
+      "fullTitle": "wauker `wauker( new Pear( ) ).map( ( constructor ) => constructor.name )` should be equal to [ 'Pear', 'Apple', 'Orange' ]",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
