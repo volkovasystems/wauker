@@ -137,7 +137,6 @@ describe( "wauker", ( ) => {
 
 	describe( "`wauker( new Pear( ) ).map( ( constructor ) => constructor.name )`", ( ) => {
 		it( "should be equal to [ 'Pear', 'Apple', 'Orange' ]", ( ) => {
-
 			class Orange {
 				constructor( ){ }
 			}
@@ -154,14 +153,7 @@ describe( "wauker", ( ) => {
 				return constructor.name;
 			} );
 
-			/* @note
-
-				Test result has change from [ 'Pear', 'Apple', 'Orange' ]
-				to [ "Pear", "Orange" ]
-			@note */
-
 			assert.deepEqual( test, [ 'Pear', 'Apple', 'Orange' ] );
-
 		} );
 	} );
 
@@ -171,111 +163,13 @@ describe( "wauker", ( ) => {
 
 //: @client:
 
-describe( "wauker", ( ) => {
-
-	describe( "`wauker( Array ).map( ( constructor ) => constructor.name )`", ( ) => {
-
-		it( "should be equal to [ 'Array' ]", ( ) => {
-
-			let test = wauker( Array ).map( function( constructor ){
-				return constructor.name;
-			} );
-
-			assert.deepEqual( test, [ "Array" ] );
-
-		} );
-
-	} );
-
-	describe( "`wauker( RangeError ).map( ( constructor ) => constructor.name )`", ( ) => {
-		it( "should be equal to [ 'RangeError', 'Error' ]", ( ) => {
-
-			let test = wauker( RangeError ).map( function( constructor ){
-				return constructor.name;
-			} );
-
-			assert.deepEqual( test, [ "RangeError", "Error" ] );
-
-		} );
-	} );
-
-
-	describe( "`wauker( Pear ).map( ( constructor ) => constructor.name )`", ( ) => {
-		it( "should be equal to [ 'Pear', 'Apple', 'Orange' ]", ( ) => {
-
-			class Orange {
-				constructor( ){ }
-			}
-
-			class Apple extends Orange {
-				constructor( ){ super( ); }
-			}
-
-			class Pear extends Apple {
-				constructor( ){ super( ); }
-			}
-
-			let test = wauker( new Pear( ) ).map( function( constructor ){
-				return constructor.name;
-			} );
-
-			/* @note
-
-				Test result has change from [ 'Pear', 'Apple', 'Orange' ]
-				to [ "Pear", "Orange" ]
-			@note */
-
-			assert.deepEqual( test, [ 'Pear', 'Apple', 'Orange' ] );
-
-		} );
-	} );
-
-	describe( "`wauker( )`", ( ) => {
-		it( "should be equal to [ ]", ( ) => {
-			assert.deepEqual( wauker( ), [ ] );
-		} );
-	} );
-
-	describe( "`wauker( 'hello' )`", ( ) => {
-		it( "should be equal to [ ]", ( ) => {
-			assert.deepEqual( wauker( "hello" ), [ ] );
-		} );
-	} );
-
-	describe( "`wauker( 123 )`", ( ) => {
-		it( "should be equal to [ ]", ( ) => {
-			assert.deepEqual( wauker( 123 ), [ ] );
-		} );
-	} );
-
-	describe( "`wauker( { } )`", ( ) => {
-		it( "should be equal to [ ]", ( ) => {
-			assert.deepEqual( wauker( { } ), [ ] );
-		} );
-	} );
-
-	describe( "`wauker( function( ){ } )`", ( ) => {
-		it( "should be equal to [ ]", ( ) => {
-			assert.deepEqual( wauker( function( ){ } ), [ ] );
-		} );
-	} );
-
-	describe( "`wauker( ( ) => { } )`", ( ) => {
-		it( "should be equal to [ ]", ( ) => {
-			assert.deepEqual( wauker( ( ) => { } ), [ ] );
-		} );
-	} );
-
-} );
-
 //: @end-client
 
 //: @bridge:
 describe( "wauker", ( ) => {
 
-	const testBridge = path.resolve(__dirname, "bridge.html");
-	const bridgeURL = "file://" + testBridge;
-
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+	
 	describe( "`wauker( Array ).map( ( constructor ) => constructor.name )`", ( ) => {
 
 		it( "should be equal to [ 'Array' ]", ( ) => {
@@ -415,7 +309,6 @@ describe( "wauker", ( ) => {
 
 	describe( "`wauker( new Pear( ) ).map( ( constructor ) => constructor.name )`", ( ) => {
 		it( "should be equal to [ 'Pear', 'Apple', 'Orange' ]", ( ) => {
-
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
@@ -443,16 +336,7 @@ describe( "wauker", ( ) => {
 
 			).value;
 
-
-
-			/* @note
-
-				Test result has change from [ 'Pear', 'Apple', 'Orange' ]
-				to [ "Pear", "Orange" ]
-			@note */
-
 			assert.deepEqual( result, [ 'Pear', 'Apple', 'Orange' ] );
-
 		} );
 	} );
 

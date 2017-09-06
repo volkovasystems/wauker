@@ -133,7 +133,6 @@ describe( "wauker", ( ) => {
 
 	describe( "`wauker( new Pear( ) ).map( ( constructor ) => constructor.name )`", ( ) => {
 		it( "should be equal to [ 'Pear', 'Apple', 'Orange' ]", ( ) => {
-
 			class Orange {
 				constructor( ){ }
 			}
@@ -150,14 +149,7 @@ describe( "wauker", ( ) => {
 				return constructor.name;
 			} );
 
-			/* @note
-
-				Test result has change from [ 'Pear', 'Apple', 'Orange' ]
-				to [ "Pear", "Orange" ]
-			@note */
-
 			assert.deepEqual( test, [ 'Pear', 'Apple', 'Orange' ] );
-
 		} );
 	} );
 
