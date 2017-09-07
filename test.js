@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const wauker = require( "./wauker.js" );
@@ -66,11 +66,9 @@ const wauker = require( "./wauker.js" );
 
 
 //: @server:
-
 describe( "wauker", ( ) => {
 
 	describe( "`wauker( Array ).map( ( constructor ) => constructor.name )`", ( ) => {
-
 		it( "should be equal to [ 'Array' ]", ( ) => {
 
 			let test = wauker( Array ).map( function( constructor ){
@@ -80,7 +78,6 @@ describe( "wauker", ( ) => {
 			assert.deepEqual( test, [ "Array" ] );
 
 		} );
-
 	} );
 
 	describe( "`wauker( RangeError ).map( ( constructor ) => constructor.name )`", ( ) => {
@@ -154,7 +151,6 @@ describe( "wauker", ( ) => {
 	} );
 
 } );
-
 //: @end-server
 
 
