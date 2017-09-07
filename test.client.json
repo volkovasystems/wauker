@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-09-07T05:31:26.759Z",
-	"end": "2017-09-07T05:32:05.457Z",
+	"start": "2017-09-07T05:34:14.078Z",
+	"end": "2017-09-07T05:34:51.580Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,165 +28,165 @@
 		{
 			"name": "wauker",
 			"duration": 0,
-			"start": "2017-09-07T05:32:04.750Z",
+			"start": "2017-09-07T05:34:50.859Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "wauker",
-			"duration": 527,
-			"start": "2017-09-07T05:32:04.751Z",
-			"end": "2017-09-07T05:32:05.278Z",
+			"duration": 538,
+			"start": "2017-09-07T05:34:50.860Z",
+			"end": "2017-09-07T05:34:51.398Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-09-07T05:32:04.752Z",
-					"end": "2017-09-07T05:32:04.752Z",
-					"duration": 0,
+					"start": "2017-09-07T05:34:50.861Z",
+					"end": "2017-09-07T05:34:50.862Z",
+					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ 'Array' ]"
 				},
 				{
-					"start": "2017-09-07T05:32:04.872Z",
-					"end": "2017-09-07T05:32:04.872Z",
-					"duration": 0,
+					"start": "2017-09-07T05:34:50.964Z",
+					"end": "2017-09-07T05:34:50.965Z",
+					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ 'Array' ]"
 				},
 				{
-					"start": "2017-09-07T05:32:04.873Z",
-					"end": "2017-09-07T05:32:04.874Z",
+					"start": "2017-09-07T05:34:50.966Z",
+					"end": "2017-09-07T05:34:50.967Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ 'RangeError', 'Error' ]"
 				},
 				{
-					"start": "2017-09-07T05:32:04.923Z",
-					"end": "2017-09-07T05:32:04.923Z",
+					"start": "2017-09-07T05:34:51.016Z",
+					"end": "2017-09-07T05:34:51.016Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ 'RangeError', 'Error' ]"
 				},
 				{
-					"start": "2017-09-07T05:32:04.924Z",
-					"end": "2017-09-07T05:32:04.924Z",
+					"start": "2017-09-07T05:34:51.016Z",
+					"end": "2017-09-07T05:34:51.016Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ ]"
 				},
 				{
-					"start": "2017-09-07T05:32:04.973Z",
-					"end": "2017-09-07T05:32:04.973Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "wauker",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-09-07T05:32:04.974Z",
-					"end": "2017-09-07T05:32:04.974Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "wauker",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-09-07T05:32:05.016Z",
-					"end": "2017-09-07T05:32:05.016Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "wauker",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-09-07T05:32:05.016Z",
-					"end": "2017-09-07T05:32:05.017Z",
-					"duration": 1,
-					"title": "\"before each\" hook",
-					"associatedSuite": "wauker",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-09-07T05:32:05.067Z",
-					"end": "2017-09-07T05:32:05.067Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "wauker",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-09-07T05:32:05.067Z",
-					"end": "2017-09-07T05:32:05.067Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "wauker",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-09-07T05:32:05.118Z",
-					"end": "2017-09-07T05:32:05.118Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "wauker",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-09-07T05:32:05.119Z",
-					"end": "2017-09-07T05:32:05.119Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "wauker",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-09-07T05:32:05.164Z",
-					"end": "2017-09-07T05:32:05.165Z",
+					"start": "2017-09-07T05:34:51.063Z",
+					"end": "2017-09-07T05:34:51.064Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ ]"
 				},
 				{
-					"start": "2017-09-07T05:32:05.166Z",
-					"end": "2017-09-07T05:32:05.167Z",
+					"start": "2017-09-07T05:34:51.064Z",
+					"end": "2017-09-07T05:34:51.065Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ ]"
 				},
 				{
-					"start": "2017-09-07T05:32:05.209Z",
-					"end": "2017-09-07T05:32:05.209Z",
+					"start": "2017-09-07T05:34:51.110Z",
+					"end": "2017-09-07T05:34:51.110Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ ]"
 				},
 				{
-					"start": "2017-09-07T05:32:05.216Z",
-					"end": "2017-09-07T05:32:05.216Z",
+					"start": "2017-09-07T05:34:51.110Z",
+					"end": "2017-09-07T05:34:51.110Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-09-07T05:34:51.153Z",
+					"end": "2017-09-07T05:34:51.153Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-09-07T05:34:51.154Z",
+					"end": "2017-09-07T05:34:51.154Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-09-07T05:34:51.240Z",
+					"end": "2017-09-07T05:34:51.240Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-09-07T05:34:51.241Z",
+					"end": "2017-09-07T05:34:51.242Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-09-07T05:34:51.294Z",
+					"end": "2017-09-07T05:34:51.294Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-09-07T05:34:51.295Z",
+					"end": "2017-09-07T05:34:51.296Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-09-07T05:34:51.352Z",
+					"end": "2017-09-07T05:34:51.352Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wauker",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-09-07T05:34:51.354Z",
+					"end": "2017-09-07T05:34:51.354Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ 'Pear', 'Apple', 'Orange' ]"
 				},
 				{
-					"start": "2017-09-07T05:32:05.278Z",
-					"end": "2017-09-07T05:32:05.278Z",
+					"start": "2017-09-07T05:34:51.398Z",
+					"end": "2017-09-07T05:34:51.398Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "wauker",
 					"associatedTest": "should be equal to [ 'Pear', 'Apple', 'Orange' ]"
 				},
 				{
-					"start": "2017-09-07T05:32:05.279Z",
-					"end": "2017-09-07T05:32:05.279Z",
-					"duration": 0,
+					"start": "2017-09-07T05:34:51.398Z",
+					"end": "2017-09-07T05:34:51.399Z",
+					"duration": 1,
 					"title": "\"after all\" hook",
 					"associatedSuite": "wauker"
 				}
@@ -194,15 +194,15 @@
 		},
 		{
 			"name": "`wauker( Array ).map( ( constructor ) => constructor.name )`",
-			"duration": 122,
-			"start": "2017-09-07T05:32:04.751Z",
-			"end": "2017-09-07T05:32:04.873Z",
+			"duration": 106,
+			"start": "2017-09-07T05:34:50.860Z",
+			"end": "2017-09-07T05:34:50.966Z",
 			"tests": [
 				{
 					"name": "should be equal to [ 'Array' ]",
-					"start": "2017-09-07T05:32:04.752Z",
-					"end": "2017-09-07T05:32:04.872Z",
-					"duration": 120,
+					"start": "2017-09-07T05:34:50.861Z",
+					"end": "2017-09-07T05:34:50.964Z",
+					"duration": 103,
 					"state": "pass"
 				}
 			],
@@ -211,13 +211,13 @@
 		{
 			"name": "`wauker( RangeError ).map( ( constructor ) => constructor.name )`",
 			"duration": 50,
-			"start": "2017-09-07T05:32:04.873Z",
-			"end": "2017-09-07T05:32:04.923Z",
+			"start": "2017-09-07T05:34:50.966Z",
+			"end": "2017-09-07T05:34:51.016Z",
 			"tests": [
 				{
 					"name": "should be equal to [ 'RangeError', 'Error' ]",
-					"start": "2017-09-07T05:32:04.873Z",
-					"end": "2017-09-07T05:32:04.923Z",
+					"start": "2017-09-07T05:34:50.966Z",
+					"end": "2017-09-07T05:34:51.016Z",
 					"duration": 50,
 					"state": "pass"
 				}
@@ -226,15 +226,15 @@
 		},
 		{
 			"name": "`wauker( )`",
-			"duration": 51,
-			"start": "2017-09-07T05:32:04.923Z",
-			"end": "2017-09-07T05:32:04.974Z",
+			"duration": 48,
+			"start": "2017-09-07T05:34:51.016Z",
+			"end": "2017-09-07T05:34:51.064Z",
 			"tests": [
 				{
 					"name": "should be equal to [ ]",
-					"start": "2017-09-07T05:32:04.923Z",
-					"end": "2017-09-07T05:32:04.973Z",
-					"duration": 50,
+					"start": "2017-09-07T05:34:51.016Z",
+					"end": "2017-09-07T05:34:51.063Z",
+					"duration": 47,
 					"state": "pass"
 				}
 			],
@@ -242,15 +242,15 @@
 		},
 		{
 			"name": "`wauker( 'hello' )`",
-			"duration": 42,
-			"start": "2017-09-07T05:32:04.974Z",
-			"end": "2017-09-07T05:32:05.016Z",
+			"duration": 46,
+			"start": "2017-09-07T05:34:51.064Z",
+			"end": "2017-09-07T05:34:51.110Z",
 			"tests": [
 				{
 					"name": "should be equal to [ ]",
-					"start": "2017-09-07T05:32:04.974Z",
-					"end": "2017-09-07T05:32:05.016Z",
-					"duration": 42,
+					"start": "2017-09-07T05:34:51.064Z",
+					"end": "2017-09-07T05:34:51.110Z",
+					"duration": 46,
 					"state": "pass"
 				}
 			],
@@ -258,15 +258,15 @@
 		},
 		{
 			"name": "`wauker( 123 )`",
-			"duration": 51,
-			"start": "2017-09-07T05:32:05.016Z",
-			"end": "2017-09-07T05:32:05.067Z",
+			"duration": 43,
+			"start": "2017-09-07T05:34:51.110Z",
+			"end": "2017-09-07T05:34:51.153Z",
 			"tests": [
 				{
 					"name": "should be equal to [ ]",
-					"start": "2017-09-07T05:32:05.016Z",
-					"end": "2017-09-07T05:32:05.067Z",
-					"duration": 51,
+					"start": "2017-09-07T05:34:51.110Z",
+					"end": "2017-09-07T05:34:51.153Z",
+					"duration": 43,
 					"state": "pass"
 				}
 			],
@@ -274,15 +274,15 @@
 		},
 		{
 			"name": "`wauker( { } )`",
-			"duration": 51,
-			"start": "2017-09-07T05:32:05.067Z",
-			"end": "2017-09-07T05:32:05.118Z",
+			"duration": 87,
+			"start": "2017-09-07T05:34:51.153Z",
+			"end": "2017-09-07T05:34:51.240Z",
 			"tests": [
 				{
 					"name": "should be equal to [ ]",
-					"start": "2017-09-07T05:32:05.067Z",
-					"end": "2017-09-07T05:32:05.117Z",
-					"duration": 50,
+					"start": "2017-09-07T05:34:51.153Z",
+					"end": "2017-09-07T05:34:51.236Z",
+					"duration": 83,
 					"state": "pass"
 				}
 			],
@@ -290,15 +290,15 @@
 		},
 		{
 			"name": "`wauker( function( ){ } )`",
-			"duration": 46,
-			"start": "2017-09-07T05:32:05.119Z",
-			"end": "2017-09-07T05:32:05.165Z",
+			"duration": 53,
+			"start": "2017-09-07T05:34:51.241Z",
+			"end": "2017-09-07T05:34:51.294Z",
 			"tests": [
 				{
 					"name": "should be equal to [ ]",
-					"start": "2017-09-07T05:32:05.119Z",
-					"end": "2017-09-07T05:32:05.164Z",
-					"duration": 45,
+					"start": "2017-09-07T05:34:51.241Z",
+					"end": "2017-09-07T05:34:51.294Z",
+					"duration": 53,
 					"state": "pass"
 				}
 			],
@@ -306,15 +306,15 @@
 		},
 		{
 			"name": "`wauker( ( ) => { } )`",
-			"duration": 44,
-			"start": "2017-09-07T05:32:05.165Z",
-			"end": "2017-09-07T05:32:05.209Z",
+			"duration": 58,
+			"start": "2017-09-07T05:34:51.294Z",
+			"end": "2017-09-07T05:34:51.352Z",
 			"tests": [
 				{
 					"name": "should be equal to [ ]",
-					"start": "2017-09-07T05:32:05.165Z",
-					"end": "2017-09-07T05:32:05.209Z",
-					"duration": 44,
+					"start": "2017-09-07T05:34:51.294Z",
+					"end": "2017-09-07T05:34:51.352Z",
+					"duration": 58,
 					"state": "pass"
 				}
 			],
@@ -322,15 +322,15 @@
 		},
 		{
 			"name": "`wauker( new Pear( ) ).map( ( constructor ) => constructor.name )`",
-			"duration": 68,
-			"start": "2017-09-07T05:32:05.210Z",
-			"end": "2017-09-07T05:32:05.278Z",
+			"duration": 46,
+			"start": "2017-09-07T05:34:51.352Z",
+			"end": "2017-09-07T05:34:51.398Z",
 			"tests": [
 				{
 					"name": "should be equal to [ 'Pear', 'Apple', 'Orange' ]",
-					"start": "2017-09-07T05:32:05.210Z",
-					"end": "2017-09-07T05:32:05.278Z",
-					"duration": 68,
+					"start": "2017-09-07T05:34:51.353Z",
+					"end": "2017-09-07T05:34:51.398Z",
+					"duration": 45,
 					"state": "pass"
 				}
 			],
